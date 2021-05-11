@@ -13,7 +13,9 @@ class Sorceror:
     def be_alive(self, damagetaken, motivationloss):
         self.health -= self.damagetaken
         self.morale -= self.motivationloss
-class ExtraHeals(Sorceror):
+#We're creating a class that inherits from another class, ExtraHeals is a SUBCLASS
+#Subclasses inherit from SUPERCLASSES, also known as parent classes
+class Faculty(Sorceror):
     pass
 
 
@@ -21,6 +23,10 @@ class ExtraHeals(Sorceror):
 yuji = Sorceror("Yuji Itadori", 50, 20, 20, 1)
 megumi = Sorceror("Megumi Fushiguro", 50, 20, 20, 1)
 nobara = Sorceror("Nobara Kugisaki", 50, 20, 20, 1)
+gojo = Faculty("Satoru Gojo", 100, 100, 5, 1)
+
+
+
 
 # Define a dictionary that holds our pet's attributes.
 sorceror = {
